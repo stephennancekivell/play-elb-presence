@@ -10,11 +10,11 @@ object ApplicationBuild extends Build {
     version := "0.1-SNAPSHOT",
     organization := "com.stephenn",
     scalaVersion := "2.10.4",
+    crossScalaVersions := Seq("2.11.2", "2.10.4"),
     libraryDependencies ++= Seq(
       "com.amazonaws" % "aws-java-sdk-elasticloadbalancing" % "1.9.22",
-      "com.typesafe.play" %% "play" % "2.3.8",// %,// "provided", 
-      "com.typesafe.play" %% "play-ws" % "2.3.8",
-      "org.specs2" %% "specs2" % "2.3.7" % "test"
+      "com.typesafe.play" %% "play" % "2.3.8",
+      "com.typesafe.play" %% "play-ws" % "2.3.8"
     ),
 
     resolvers += "typesafe" at "http://repo.typesafe.com/typesafe/maven-releases",
